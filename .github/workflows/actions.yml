@@ -13,7 +13,7 @@ jobs:
       - name: Build project with Maven
         run: mvn clean install
       - name: Depcheck
-        uses: dependency-check/Dependency-Check_Action@master
+        uses: dependency-check/Dependency-Check_Action@main
         id: Depcheck
         with:
           project: 'secdevops-actions'
