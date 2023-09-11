@@ -1,7 +1,7 @@
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   depchecktest:
@@ -13,7 +13,7 @@ jobs:
       - name: Build project with Maven
         run: mvn clean install
       - name: Depcheck
-        uses: dependency-check/Dependency-Check_Action@main
+        uses: dependency-check/Dependency-Check_Action@master
         id: Depcheck
         with:
           project: 'secdevops-actions'
